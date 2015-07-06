@@ -4,7 +4,7 @@ MAINTAINER Stefan Wolf <shb256@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update &&\
+RUN apt-get update && \
 				apt-get install -y wget build-essential libwrap0-dev libssl-dev python-distutils-extra libc-ares-dev uuid-dev
 RUN mkdir -p /usr/local/src
 WORKDIR /usr/local/src
